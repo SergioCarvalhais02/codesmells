@@ -2,9 +2,6 @@ package pt.up.fe.ldts.example4
 
 import spock.lang.Specification
 
-import static org.junit.Assert.assertEquals
-import static org.junit.Assert.assertEquals
-
 
 class WorkerSpockTest extends Specification {
 

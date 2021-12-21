@@ -1,8 +1,10 @@
 package pt.up.fe.ldts.example1;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class OrderTest {
     private Order getSmallOrder() {
@@ -21,7 +23,7 @@ public class OrderTest {
     @Test
     public void isElegibleForFreeDelivery() {
         assertFalse(getSmallOrder().isElegibleForFreeDelivery());
-        assertTrue(getLargeOrder().isElegibleForFreeDelivery());
+        Assertions.assertTrue(getLargeOrder().isElegibleForFreeDelivery());
     }
 
     @Test
