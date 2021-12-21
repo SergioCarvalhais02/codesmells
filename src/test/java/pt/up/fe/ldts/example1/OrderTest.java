@@ -5,11 +5,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.Assert.*;
 
 public class OrderTest {
-
     private Order getSmallOrder() {
         Order order = new Order();
         order.add(new Product("Lollipop", 5), 10);
-
         return order;
     }
 
@@ -17,7 +15,6 @@ public class OrderTest {
         Order order = new Order();
         order.add(new Product("Playstation 4", 400), 2);
         order.add(new Product("Red Dead Redemption 2", 50), 1);
-
         return order;
     }
 

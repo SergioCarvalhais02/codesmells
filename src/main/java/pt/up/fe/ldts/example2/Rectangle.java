@@ -8,14 +8,17 @@ public class Rectangle extends Shape{
         this.width = width;
         this.height = height;
     }
+
     @Override
     public double getArea() {
         return width * height;
     }
+
     @Override
     public double getPerimeter() {
         return 2 * (width + height);
     }
+
     @Override
     public void draw(GraphicFramework graphics) {
         graphics.drawLine(x, y, x + width, y);
